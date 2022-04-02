@@ -47,11 +47,24 @@ function selecionar(el) {
         document.querySelector(".SobremSelecionada ion-icon").classList.toggle("escondido");
         }
     }
+    if(document.querySelector(".PratoSelecionado")!== null &&
+    document.querySelector(".BebidaSelecionada")!== null &&
+    document.querySelector(".SobremSelecionada")!== null){
+        document.querySelector(".desativado").classList.add("escondido");
+        document.querySelector(".ativado").classList.remove("escondido");
+    }
 }
 
-if(document.querySelector(".SobremSelecionada")!==null){
-    alert("TRUE")
+function fecharPedido(){
+    const nomePrato = document.querySelector(".PratoSelecionado h3").innerHTML;
+    const nomeBebida = document.querySelector(".BebidaSelecionada h3").innerHTML;
+    const nomeSobrem = document.querySelector(".SobremSelecionada h3").innerHTML;
+    const precoPrato = Number(document.querySelector(".PratoSelecionado h4").innerHTML.replace(/R[^\d.]/g, '').replace(/,/g,'.'));
+    const precoBebida = Number(document.querySelector(".BebidaSelecionada h4").innerHTML.replace(/R[^\d.]/g, '').replace(/,/g,'.'));
+    const precoSobrem = Number(document.querySelector(".SobremSelecionada h4").innerHTML.replace(/R[^\d.]/g, '').replace(/,/g,'.'));
+    let precoTotal = precoPrato+precoBebida+precoSobrem;
+    precoTotal = precoTotal.toFixed([2]);
+    const textoMsg = "Olá, gostaria de fazer o pedido:\n- Prato: "+nomePrato+"\n- Bebida: "+nomeBebida+"\n- Sobremesa: "+nomeSobrem+"\nTotal: R$ "+precoTotal;
+    let msgPronta = encodeURIComponent(textoMsg);
+    location.href = `https://wa.me/525951207831?text=${msgPronta}`;
 }
-
-
-/*document.querySelector(".PratoSelecionado h4").innerHTML*/

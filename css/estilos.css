@@ -112,7 +112,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 }
-.rodape button{
+.desativado{
     background-color: #CBCBCB;
     padding: 0 50px;
     width:364px;
@@ -120,4 +120,15 @@ justify-content: center;
     border-radius: 50px;
     color: #FFFFFF;
     font-size: 20px;
+}
+
+.ativado{
+    background-color: #32B72F;
+    padding: 0 50px;
+    width:364px;
+    height:61px;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
 }

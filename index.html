@@ -21,23 +21,23 @@
     <div class="escolhas">
         <div class="prato" onclick="selecionar(this)">
             <img src="/projeto3-driveneats/imagens/frango_yin_yang 1.png">
-            <h3>Frango Yin Yang</h3>
-            <p>Um pouco de batata, um pouco de salada</p>
-            <h4>R$14,90</h4>
+            <h3>Frango com quiabo</h3>
+            <p>Incui arroz, feijão e opção de salada ou batata-frita</p>
+            <h4>R$ 12,90</h4>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
         </div>
         <div class="prato" onclick="selecionar(this)">
             <img src="/projeto3-driveneats/imagens/frango_yin_yang 1.png">
-            <h3>Frango Yin Yang</h3>
-            <p>Um pouco de batata, um pouco de salada</p>
-            <h4>R$14,90</h4>
+            <h3>Strogonoff de carne</h3>
+            <p>Inclui arroz e batata palha</p>
+            <h4>R$ 14,90</h4>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
         </div>
         <div class="prato" onclick="selecionar(this)">
             <img src="/projeto3-driveneats/imagens/frango_yin_yang 1.png">
-            <h3>Frango Yin Yang</h3>
-            <p>Um pouco de batata, um pouco de salada</p>
-            <h4>R$14,90</h4>
+            <h3>Feijoada</h3>
+            <p>Acompanhada de arroz, farofa, couve e vinagrete</p>
+            <h4>R$ 16,90</h4>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
         </div>
     </div>
@@ -45,23 +45,23 @@
     <div class="escolhas">
         <div class="bebida" onclick="selecionar(this)">
             <img src="/projeto3-driveneats/imagens/coquinha_gelada 1.png">
-            <h3>Coca</h3>
+            <h3>Coca-cola</h3>
             <p>Lata 350ml</p>
-            <h4>R$4,90</h4>
+            <h4>R$ 4,90</h4>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
         </div>
         <div class="bebida" onclick="selecionar(this)">
             <img src="/projeto3-driveneats/imagens/coquinha_gelada 1.png">
-            <h3>Coca</h3>
-            <p>Lata 350ml</p>
-            <h4>R$4,90</h4>
+            <h3>Água sem gás</h3>
+            <p>Garrafa de 500ml</p>
+            <h4>R$ 3,90</h4>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
         </div>
         <div class="bebida" onclick="selecionar(this)">
             <img src="/projeto3-driveneats/imagens/coquinha_gelada 1.png">
-            <h3>Coca</h3>
-            <p>Lata 350ml</p>
-            <h4>R$4,90</h4>
+            <h3>Suco de laranja</h3>
+            <p>Copo de 500ml</p>
+            <h4>R$ 5,90</h4>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
         </div>
     </div>
@@ -69,28 +69,29 @@
     <div class="escolhas">
         <div class="sobremesa" onclick="selecionar(this)">
             <img src="/projeto3-driveneats/imagens/pudim 1.png">
-            <h3>Pudim</h3>
-            <p>Leite condensado com caramelo</p>
-            <h4>R$7,90</h4>
+            <h3>Gelatina</h3>
+            <p>Sabores a escolher: cereja, morango, uva</p>
+            <h4>R$ 4,90</h4>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="sobremesa" onclick="selecionar(this)">
+            <img src="/projeto3-driveneats/imagens/pudim 1.png">
+            <h3>Salada de frutas</h3>
+            <p>Combinação de maçã, banana, mamão, morango e laranja</p>
+            <h4>R$ 7,90</h4>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
         </div>
         <div class="sobremesa" onclick="selecionar(this)">
             <img src="/projeto3-driveneats/imagens/pudim 1.png">
             <h3>Pudim</h3>
-            <p>Leite condensado com caramelo</p>
-            <h4>R$7,90</h4>
-            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
-        </div>
-        <div class="sobremesa" onclick="selecionar(this)">
-            <img src="/projeto3-driveneats/imagens/pudim 1.png">
-            <h3>Pudim</h3>
-            <p>Leite condensado com caramelo</p>
-            <h4>R$7,90</h4>
+            <p>Leite condensado com cobertura caramelizada</p>
+            <h4>R$ 5,90</h4>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
         </div>
     </div>
     <div class="rodape">
-<button>Selecione os 3 itens para fechar o pedido</button>
+<button class="desativado">Selecione os 3 itens para fechar o pedido</button>
+<button class="ativado escondido" onclick="fecharPedido()">Fechar pedido</button>
     </div>
 </div>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
