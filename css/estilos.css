@@ -87,6 +87,8 @@ h4{
     margin-top:4px;
     margin-bottom:8px;
     width:144px;
+    height:87px;
+    border-radius:4px;
 }
 .escolhas p{
     display: inline-flex;
@@ -105,15 +107,16 @@ h4{
     height:92px;
     position:fixed;
     bottom:0;
-left:0;
-width:100%;
-display:flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+    left:0;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .desativado{
     background-color: #CBCBCB;
+    border:none;
     padding: 0 50px;
     width:364px;
     height:61px;
@@ -124,6 +127,7 @@ justify-content: center;
 
 .ativado{
     background-color: #32B72F;
+    border:none;
     padding: 0 50px;
     width:364px;
     height:61px;
@@ -131,4 +135,66 @@ justify-content: center;
     color: #FFFFFF;
     font-size: 20px;
     font-weight: bold;
+}
+
+.confirmacao{
+    display:none;
+    width:100%;
+    height:100%;
+    background-color: rgba(255, 255, 255,0.8);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:2;
+}
+.aparecer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkPedido{
+    background-color: #50D074;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:377px;
+    height:353px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(50,50,50,0.4);
+    padding: 16px 26px 0 26px;
+}
+.checkPedido h3{
+    font-size: 22px;
+    color:#FFFFFF;
+    font-weight: bold;
+    margin-top:4px;
+    margin-bottom:24px;
+}
+.checkPedido div{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+    margin-top:4px;
+}
+.checkPedido p{
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.checkPedido button{
+background-color: #FFFFFF;
+border:none;
+width:333px;
+height:52px;
+padding: 0 30px;
+color:#50D074;
+font-size: 22px;
+font-weight: bold;
+border-radius: 50px;
+}
+.checkPedido .cancelar{
+    color:#FFFFFF;
+    background-color:transparent;
+    border:none;
+    font-size: 20px;
+    padding: 0 50px;
 }
