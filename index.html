@@ -12,112 +12,155 @@
     <title>Driven Eats</title>
 </head>
 <body>
+
+
+    <!-- Topo Fixo -->
+
     <div class="topo">
-<h1>DrivenEats</h1>
-<p>Sua comida em 6 minutos</p>
-    </div>    
+        <h1>DrivenEats</h1>
+        <p>Sua comida em 6 minutos</p>
+    </div>
+    
+    <!-- Topo Fixo -->
+
+    <!-- Conteúdo da página -->
+
     <div class="container">
-    <h2>Primeiro, seu prato</h2>
-    <div class="escolhas">
-        <div class="prato" onclick="selecionar(this)">
-            <img src="/projeto3-driveneats/imagens/frango-com-quiabo.jpg">
-            <h3>Frango com quiabo</h3>
-            <p>Com arroz, feijão e salada ou batata-frita</p>
-            <h4>R$ 12,90</h4>
-            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
-        </div>
-        <div class="prato" onclick="selecionar(this)">
-            <img src="/projeto3-driveneats/imagens/strogonoff.jpg">
-            <h3>Strogonoff de carne</h3>
-            <p>Com arroz e batata palha</p>
-            <h4>R$ 14,90</h4>
-            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
-        </div>
-        <div class="prato" onclick="selecionar(this)">
-            <img src="/projeto3-driveneats/imagens/feijoadajpg.jpg">
-            <h3>Feijoada</h3>
-            <p>Com arroz, farofa, couve e vinagrete</p>
-            <h4>R$ 16,90</h4>
-            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
-        </div>
-    </div>
-    <h2>Agora, sua bebida</h2>
-    <div class="escolhas">
-        <div class="bebida" onclick="selecionar(this)">
-            <img src="/projeto3-driveneats/imagens/coquinha_gelada 1.png">
-            <h3>Coca-cola</h3>
-            <p>Lata 350ml</p>
-            <h4>R$ 4,90</h4>
-            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
-        </div>
-        <div class="bebida" onclick="selecionar(this)">
-            <img src="/projeto3-driveneats/imagens/aguajpg.jpg">
-            <h3>Água sem gás</h3>
-            <p>Garrafa de 500ml</p>
-            <h4>R$ 3,90</h4>
-            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
-        </div>
-        <div class="bebida" onclick="selecionar(this)">
-            <img src="/projeto3-driveneats/imagens/sucojpg.jpg">
-            <h3>Suco de laranja</h3>
-            <p>Copo de 500ml</p>
-            <h4>R$ 5,90</h4>
-            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
-        </div>
-    </div>
-    <h2>Por fim, sua sobremesa</h2>
-    <div class="escolhas">
-        <div class="sobremesa" onclick="selecionar(this)">
-            <img src="/projeto3-driveneats/imagens/gelatinajpg.jpg">
-            <h3>Gelatina</h3>
-            <p>Sabor cereja, morango ou uva</p>
-            <h4>R$ 4,90</h4>
-            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
-        </div>
-        <div class="sobremesa" onclick="selecionar(this)">
-            <img src="/projeto3-driveneats/imagens/saladajpg.jpg">
-            <h3>Salada de frutas</h3>
-            <p>Com maçã, banana, mamão e laranja</p>
-            <h4>R$ 7,90</h4>
-            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
-        </div>
-        <div class="sobremesa" onclick="selecionar(this)">
-            <img src="/projeto3-driveneats/imagens/pudim 1.png">
-            <h3>Pudim</h3>
-            <p>Sabor leite condensado</p>
-            <h4>R$ 5,90</h4>
-            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
-        </div>
-    </div>
-    <div class="rodape">
-<button class="desativado">Selecione os 3 itens para fechar o pedido</button>
-<button class="ativado escondido" onclick="confirmar()">Fechar pedido</button>
-    </div>
-    <div class="confirmacao">
-        <div class="checkPedido">
-            <h3>Confirme seu pedido</h3>
-            <div class="prato">
-                <p>Prato</p>
-                <p>Preço prato</p>
+
+        <!-- Caixas de escolha: Prato -->
+
+        <h2>Primeiro, seu prato</h2>
+        <div class="escolhas">
+            <div class="prato" onclick="selecionar(this)">
+                <img src="/projeto3-driveneats/imagens/frango-com-quiabo.jpg">
+                <h3>Frango com quiabo</h3>
+                <p>Com arroz, feijão e salada ou batata-frita</p>
+                <h4>R$ 12,90</h4>
+                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="bebida">
-                <p>Bebida</p>
-                <p>Preço bebida</p>
+            <div class="prato" onclick="selecionar(this)">
+                <img src="/projeto3-driveneats/imagens/strogonoff.jpg">
+                <h3>Strogonoff de carne</h3>
+                <p>Com arroz e batata palha</p>
+                <h4>R$ 14,90</h4>
+                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="sobremesa">
-                <p>Sobremesa</p>
-                <p>Preço sobremesa</p>
+            <div class="prato" onclick="selecionar(this)">
+                <img src="/projeto3-driveneats/imagens/feijoadajpg.jpg">
+                <h3>Feijoada</h3>
+                <p>Com arroz, farofa, couve e vinagrete</p>
+                <h4>R$ 16,90</h4>
+                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
             </div>
-            <div>
-                <h3>TOTAL</h3>
-                <h3 class="preço">Preço total</h3>
-            </div>
-            <button onclick="fecharPedido()">Tudo certo, pode pedir!</button>
-            <button class="cancelar" onclick="voltar()">Cancelar</button>
         </div>
+
+        <!-- Caixas de escolha: Prato -->
+
+
+        <!-- Caixas de escolha: Bebida -->
+
+        <h2>Agora, sua bebida</h2>
+        <div class="escolhas">
+            <div class="bebida" onclick="selecionar(this)">
+                <img src="/projeto3-driveneats/imagens/coquinha_gelada 1.png">
+                <h3>Coca-cola</h3>
+                <p>Lata 350ml</p>
+                <h4>R$ 4,90</h4>
+                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="bebida" onclick="selecionar(this)">
+                <img src="/projeto3-driveneats/imagens/aguajpg.jpg">
+                <h3>Água sem gás</h3>
+                <p>Garrafa de 500ml</p>
+                <h4>R$ 3,90</h4>
+                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="bebida" onclick="selecionar(this)">
+                <img src="/projeto3-driveneats/imagens/sucojpg.jpg">
+                <h3>Suco de laranja</h3>
+                <p>Copo de 500ml</p>
+                <h4>R$ 5,90</h4>
+                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+        </div>
+
+        <!-- Caixas de escolha: Bebida -->
+
+
+        <!-- Caixas de escolha: Sobremesa -->
+
+        <h2>Por fim, sua sobremesa</h2>
+        <div class="escolhas">
+            <div class="sobremesa" onclick="selecionar(this)">
+                <img src="/projeto3-driveneats/imagens/gelatinajpg.jpg">
+                <h3>Gelatina</h3>
+                <p>Sabor cereja, morango ou uva</p>
+                <h4>R$ 4,90</h4>
+                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="sobremesa" onclick="selecionar(this)">
+                <img src="/projeto3-driveneats/imagens/saladajpg.jpg">
+                <h3>Salada de frutas</h3>
+                <p>Com maçã, banana, mamão e laranja</p>
+                <h4>R$ 7,90</h4>
+                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="sobremesa" onclick="selecionar(this)">
+                <img src="/projeto3-driveneats/imagens/pudim 1.png">
+                <h3>Pudim</h3>
+                <p>Sabor leite condensado</p>
+                <h4>R$ 5,90</h4>
+                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+        </div>
+
+        <!-- Caixas de escolha: Sobremesa -->
+
+
+        <!-- Rodapé FIXO -->
+
+        <div class="rodape">
+            <button class="desativado">Selecione os 3 itens para fechar o pedido</button>
+            <button class="ativado escondido" onclick="confirmar()">Fechar pedido</button>
+        </div>
+        
+        <!-- Rodapé FIXO -->
+
+
+        <!-- Janela de confirmação (Após fechar pedido) -->
+
+        <div class="confirmacao">
+            <div class="checkPedido">
+                <h3>Confirme seu pedido</h3>
+                <div class="prato">
+                    <p>Prato</p>
+                    <p>Preço prato</p>
+                </div>
+                <div class="bebida">
+                    <p>Bebida</p>
+                    <p>Preço bebida</p>
+                </div>
+                <div class="sobremesa">
+                    <p>Sobremesa</p>
+                    <p>Preço sobremesa</p>
+                </div>
+                <div>
+                    <h3>TOTAL</h3>
+                    <h3 class="preço">Preço total</h3>
+                </div>
+                <button onclick="fecharPedido()">Tudo certo, pode pedir!</button>
+                <button class="cancelar" onclick="voltar()">Cancelar</button>
+            </div>
+        </div>
+
+        <!-- Janela de confirmação (Após fechar pedido) -->
+
     </div>
-</div>
-<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-<script src="/projeto3-driveneats/script.js"></script>
+
+    <!-- Conteúdo da página -->
+
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="/projeto3-driveneats/script.js"></script>
 </body>
 </html>
